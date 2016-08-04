@@ -41,6 +41,7 @@ public class MainActivity extends AppCompatActivity {
                 dbController.insertarData(editNombre.getText().toString(),
                         editDomicilio.getText().toString(),
                         Integer.parseInt(editEdad.getText().toString()));
+                showData();
                 dbController.close();
             }
         });
@@ -50,6 +51,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 dbController.open();
                 dbController.delete(0);
+                showData();
                 dbController.close();
             }
         });
@@ -64,10 +66,9 @@ public class MainActivity extends AppCompatActivity {
                 String name = cursor.getString(1);
                 int edad = cursor.getInt(2);
                 String domicilio = cursor.getString(3);
-                textView.append("nombre: " + name
-                        + " direccion: "
-                        + domicilio + " edad: "
-                        + edad + "\n");
+                textView.append("nombre: " + name + "\n"
+                        + " direccion: " + domicilio + "\n"
+                        + " edad: " + edad + "\n\n");
             } while (cursor.moveToNext());
         }
     }
