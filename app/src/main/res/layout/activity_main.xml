@@ -11,7 +11,7 @@
     tools:context="com.example.pc_.databasesqlite.MainActivity">
 
     <EditText
-        android:id="@+id/editText"
+        android:id="@+id/editNombre"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="5dp"
