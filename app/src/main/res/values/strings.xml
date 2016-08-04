@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">DatabaseSQLite</string>
+    <string name="nombre">Nombre</string>
+    <string name="edad">Edad</string>
+    <string name="direccion">Direccion</string>
+    <string name="insertar">Insertar</string>
+    <string name="borrar">Borrar</string>
+</resources>
