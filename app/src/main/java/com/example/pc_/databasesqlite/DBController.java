@@ -49,6 +49,8 @@ public class DBController {
         return cursor;
     }
 
-    
+    public void delete(long id) {
+        db.delete(DatabaseHelper.TABLE_NAME, DatabaseHelper._ID + "=" + id, null);
+    }
 
 }
